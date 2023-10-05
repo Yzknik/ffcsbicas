@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Fórum</title>
+</head>
+<body>
+    <h1>FOFOCAS BICAS</h1>
+
+    <div id="user-form">
+        <h2>Criar um Novo Usuário</h2>
+        <input type="text" id="username" placeholder="Nome de Usuário">
+        <button onclick="createUser()">Criar Usuário</button>
+    </div>
+
+    <div id="topic-form">
+        <h2>Criar um Novo Tópico</h2>
+        <input type="text" id="topic-title" placeholder="Título do Tópico">
+        <button onclick="createTopic()">Criar Tópico</button>
+    </div>
+
+    <div id="topic-list">
+        <h2>Escolha um Tópico</h2>
+        <select id="select-topic" onchange="loadMessages()">
+            <option value="" disabled selected>Selecione um tópico</option>
+        </select>
+    </div>
+
+    <div id="topics">
+        <!-- Tópicos criados pelos usuários aparecerão aqui -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
